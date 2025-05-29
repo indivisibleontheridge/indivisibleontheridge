@@ -1,0 +1,151 @@
+<!DOCTYPE html >
+<div class="header">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/JnmpZyy3/Logo-Indivisible-On-The-Ridge-Horizontal-For-Light-Background.png" alt="Indivisible on the Ridge Logo" width="1000" height="260" /></p></div>
+<title>Indivisible on the Ridge - Lake Wales, FL</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</header>
+
+<body class="fixed">
+
+<div id="container">
+
+<div id="header" > 
+<div id="rack-functions">
+
+</div>
+</div>
+
+<div id="wrapper">
+<div id="mainContent">
+<table class="main-content">
+    <tr>
+        <td class="left-column">
+
+<div class="panel">
+<div class="content">
+<h3>Subscribe to the Indivisible on the Ridge Newsletter!</h3>
+
+<div class="error"><span class="required">* required fields are marked red</span></div>
+
+<script language="Javascript" type="text/javascript">
+
+function checkform()
+{
+  for (i=0;i<fieldstocheck.length;i++) {
+    if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].type") == "checkbox") {
+      if (document.subscribeform.elements[fieldstocheck[i]].checked) {
+      } else {
+        alert("The following field is required:  "+fieldnames[i]);
+        eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+
+        return false;
+      }
+    } else {
+      if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].value") == "") {
+        alert("Please enter your "+fieldnames[i]);
+        eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+
+        return false;
+      }
+    }
+  }
+  for (i=0;i<groupstocheck.length;i++) {
+    if (!checkGroup(groupstocheck[i],groupnames[i])) {
+      return false;
+    }
+  }
+  
+  if (! compareEmail()) {
+    alert("Email addresses you entered do not match");
+
+    return false;
+  }
+  if (! checkEmail()) {
+    alert("Email address is not valid");
+
+    return false;
+  }
+
+  return true;
+}
+
+var fieldstocheck = new Array();
+var fieldnames = new Array();
+function addFieldToCheck(value,name)
+{
+  fieldstocheck[fieldstocheck.length] = value;
+  fieldnames[fieldnames.length] = name;
+}
+var groupstocheck = new Array();
+var groupnames = new Array();
+function addGroupToCheck(value,name)
+{
+  groupstocheck[groupstocheck.length] = value;
+  groupnames[groupnames.length] = name;
+}
+
+function compareEmail()
+{
+  return (document.subscribeform.elements["email"].value == document.subscribeform.elements["emailconfirm"].value);
+}
+
+function checkEmail()
+{
+  var re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(document.subscribeform.elements["email"].value);
+}
+
+function checkGroup(name,value)
+{
+  option = -1;
+  for (i=0;i<document.subscribeform.elements[name].length;i++) {
+    if (document.subscribeform.elements[name][i].checked) {
+      option = i;
+    }
+  }
+  if (option == -1) {
+    alert ("Please enter your "+value);
+
+    return false;
+  }
+
+  return true;
+}
+
+</script><form method="post" action="" name="subscribeform"><table border=1>
+  <tr><td><div class="required"><label for="email">Email address *</label></div></td>
+  <td class="attributeinput"><input type=text name=email required="required" placeholder="" size="40" id="email" />
+  <script language="Javascript" type="text/javascript">addFieldToCheck("email","Email address");</script></td></tr>
+  <tr><td><div class="required"><label for="confirm">Confirm your email address *</label></div></td>
+  <td class="attributeinput"><input type=text name=emailconfirm required="required" value="" size="40" id="confirm" />
+  <script language="Javascript" type="text/javascript">addFieldToCheck("emailconfirm","Confirm your email address");</script></td></tr><input type="hidden" name="htmlemail" value="1" />
+
+<tr><td><div class="required"><label for="attribute1">First name *</label></div></td><td class="attributeinput">
+            <input type="text" name="attribute1"  class="attributeinput" size="40" value="" id="attribute1" /><script language="Javascript" type="text/javascript">addFieldToCheck("attribute1","First name");</script></td></tr>
+
+<tr><td><div class="required"><label for="attribute2">Last name *</label></div></td><td class="attributeinput">
+            <input type="text" name="attribute2"  class="attributeinput" size="40" value="" id="attribute2" /><script language="Javascript" type="text/javascript">addFieldToCheck("attribute2","Last name");</script></td></tr></table><input type="hidden" name="list[2]" value="signup" /><input type="hidden" name="listname[2]" value="newsletter"/><center><input type=submit name="subscribe" value="Subscribe to our newsletter!" onClick="return checkform();"> &nbsp;&nbsp; </a></center><br><center><a href="https://newsletter.indivisibleontheridge.org/?p=unsubscribe&id=1">Unsubscribe</a></center></form><td>
+
+<td class="right-column">
+            <!-- New content goes here -->
+        </td>
+    </tr>
+</table>
+
+</div>
+</div><!-- ENDOF #mainContent-->
+</div><!-- ENDOF .wrapper -->
+</div><!-- ENDOF #container -->
+
+<div id="footer">
+<div id="footerframe">
+<ul class="list-unstyled">
+<li>&copy; Indivisible on the Ridge</li>
+</ul>
+</div>
+</div>
+
+</body>
+
+</html>

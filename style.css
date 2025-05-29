@@ -1,0 +1,329 @@
+/* start file:/lists/styles/style.css   */
+
+/* =-------------- Global Reset ----------*/
+
+html, body, div, span, applet, object, pre,
+iframe, h1, h2, h3, h4, h5, h6, blockquote,
+p, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, tt, small, strike, sub, strong, b,
+sup, var, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+:focus {
+    outline: 0
+}
+
+ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* =------------- Typography ----------*/
+
+html * {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px 0px;
+    line-height: 30px
+}
+
+p {
+    font-size: 12px;
+    margin: .75em 0
+}
+
+li, table, form {
+    font-size: 12px
+}
+
+.error {
+    font-size: 13px;
+    padding: 3px;
+    font-variant: small-caps;
+}
+
+input, textarea, select {
+    font-size: 14px;
+}
+
+/* =-----------------Layout ----------*/
+
+/* Remove default margin and padding */
+body, h1, h2, h3, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 920px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+#header {
+    display: block; /* Remove space underneath images */
+    margin: 0;     /* Ensures no additional margins */
+}
+
+#footer {
+    clear: both;
+    background-position: top left;
+    background-repeat: repeat-x
+}
+
+#footerframe {
+    margin: 0 40px;
+    min-height: 100px
+}
+
+#footer ul {
+    float: auto;
+    margin: 1.5em 0
+}
+
+#footer ul li {
+    float: auto;
+    margin-right: 10px
+}
+
+/* =---------------- Styles ----------*/
+
+table.main-content {
+    width: 100%;
+    border-collapse: collapse; /* Ensures no gaps between borders */
+    position: relative;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Styling for the left column */
+table.main-content .left-column {
+    width: 80%; /* Takes up 70% of the table width */
+    padding: 5px; /* Add some padding for better UX */
+    vertical-align: top; /* Aligns content to the top */
+}
+
+/* New styling for the right column */
+table.main-content .right-column {
+    width: 20%; /* Takes up 20% of the table width */
+    padding: 5px; /* Add some padding for better UX */
+    background-color: #14447A; /* Light background for differentiation */
+    vertical-align: top; /* Aligns content to the top */
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.panel {
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 2px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.panel .content {
+    position: relative;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #14447A;
+    padding: 5px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.subscribe-form {
+    display: flex;                 /* Use flexbox for layout */
+    flex-direction: column;        /* Arrange children in a column */
+    align-items: center;           /* Center children horizontally */
+    justify-content: center;       /* Center children vertically */
+    width: 600px;                 /* Set a specific width for the form */
+    margin: 0 auto;               /* Center the form on the page */
+}
+
+.subscribe-form label {
+    margin-bottom: 5px;           /* Space between the label and input*/
+}
+
+.subscribe-form input {
+    margin-bottom: 15px;          /* Space between input and button */
+    padding: 8px;                 /* Inner padding for comfort */
+    width: 100%;                  /* Make the input full-width relative to the form */
+}
+
+.poweredby {
+    clear: both;
+    padding-top: 2px;
+}
+
+p.poweredby a {
+    background: none;
+}
+
+p.poweredby a:hover {
+    background: none;
+}
+
+p a {
+    font-size: 16px;
+}
+
+p a[href='./?p=unsubscribe'] {
+    float: right;
+    font-size: 12px;
+    Margin: auto;
+    margin-top: 50px
+}
+
+/* ---------------- Table Styles ---------------- */
+
+#mainContent table {
+    width: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+#mainContent table td {
+    padding: 2px 2px;
+    margin: 1px;
+}
+
+/* =---------------- Form Elements ----------*/
+
+input[type="text"],
+input[type="password"] {
+    margin: 5px 0;
+    padding: 6px;
+    border-width: 2px;
+    border-style: solid;
+    width: 70%;
+}
+
+textarea {
+    padding: 0px;
+    border-width: 1px;
+    border-style: solid;
+    width: 70%;
+}
+
+select {
+    margin: 0 2px 0 0;
+    padding: 2px 1px 2px 5px;
+    background: none repeat scroll 0 0;
+    border-width: 1px;
+    border-style: solid;
+}
+
+input[type="submit"],
+p.button a, a.button {
+    background-color: #ADD8E6;
+    width: 575px;                 /* Set a specific width for the form */
+    margin: 0 auto;    
+    border-style: solid;
+    border-color: #14447A;
+    border-width: 1px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding: 3px 6px;
+    font-size: 18px;
+    line-height: 1;
+}
+
+input:hover[type="submit"],
+a:hover.button, p.button a:hover {
+    cursor: pointer;
+    color: #14447A;
+    text-decoration: underline;    /* Underline on hover */
+    background-color: #30BEEE;
+    font-weight: bold;            /* Make text bold on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* X-offset, Y-offset, Blur, Color */
+    transform: scale(1)
+}
+
+span.required, div.required {
+    color: red;
+}
+
+/* =---------------- Top Logo ----------*/
+
+#logo {
+    margin-top: 5px;
+    font-size: 48px;
+}
+
+/* =---------------- small screens ----------*/
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    table.main-content {
+    table.main-content .left-column,
+    table.main-content .right-column {
+        width: 100%; /* Each column takes full width */
+        display: block; /* Stack columns */
+    }
+
+    table.main-content .right-column {
+        margin-top: 15px; /* Adds space between stacked columns */
+    }
+
+/* end file:/lists/styles/style.css   */
