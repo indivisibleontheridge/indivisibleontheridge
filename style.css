@@ -90,7 +90,7 @@ body, h1, h2, h3, p, div {
 }
 
 #container {
-    max-width: 600px;
+    max-width: 920px;
     min-width: 300px;
     margin: 0 auto;
 }
@@ -102,13 +102,13 @@ body, h1, h2, h3, p, div {
 
 #footer {
     clear: both;
-    background-position: center;
+    background-position: top left;
     background-repeat: repeat-x
 }
 
 #footerframe {
-    margin: 0 20px;
-    min-height: 20px
+    margin: 0 40px;
+    min-height: 100px
 }
 
 #footer ul {
@@ -124,7 +124,7 @@ body, h1, h2, h3, p, div {
 /* =---------------- Styles ----------*/
 
 table.main-content {
-    width: 100%;
+    width: 70%;
     border-collapse: collapse; /* Ensures no gaps between borders */
     position: relative;
     border-width: 5px;
@@ -139,30 +139,6 @@ table.main-content {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Styling for the left column */
-table.main-content .left-column {
-    width: 80%; /* Takes up 70% of the table width */
-    padding: 5px; /* Add some padding for better UX */
-    vertical-align: top; /* Aligns content to the top */
-}
-
-/* New styling for the right column */
-table.main-content .right-column {
-    width: 20%; /* Takes up 20% of the table width */
-    padding: 5px; /* Add some padding for better UX */
-    background-color: #14447A; /* Light background for differentiation */
-    vertical-align: top; /* Aligns content to the top */
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    margin-bottom: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-}
 
 .panel {
     position: relative;
@@ -179,7 +155,7 @@ table.main-content .right-column {
 }
 
 .panel .content {
-    position: relative;
+    position: center;
     border-width: 2px;
     border-style: solid;
     border-color: #14447A;
@@ -226,7 +202,7 @@ p a {
 }
 
 p a[href='./?p=unsubscribe'] {
-    float: center;
+    float: right;
     font-size: 12px;
     Margin: auto;
     margin-top: 50px
@@ -235,10 +211,10 @@ p a[href='./?p=unsubscribe'] {
 /* ---------------- Table Styles ---------------- */
 
 #mainContent table {
-    width: 100%;
+    width: 70%;
     border-width: 2px;
     border-style: solid;
-    border-color: white;
+    border-color: #14447A;
 }
 
 #mainContent table td {
@@ -274,7 +250,7 @@ select {
 
 input[type="submit"],
 p.button a, a.button {
-    background-color: #ADD8E6;
+    background-color: #30BEEE;
     width: 575px;                 /* Set a specific width for the form */
     margin: 0 auto;    
     border-style: solid;
@@ -316,14 +292,6 @@ span.required, div.required {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     table.main-content {
-    table.main-content .left-column,
-    table.main-content .right-column {
-        width: 100%; /* Each column takes full width */
-        display: block; /* Stack columns */
-    }
-
-    table.main-content .right-column {
-        margin-top: 15px; /* Adds space between stacked columns */
     }
 
 /* end file:/lists/styles/style.css   */
