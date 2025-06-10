@@ -90,7 +90,7 @@ body, h1, h2, h3, p, div {
 }
 
 #container {
-    max-width: 920px;
+    max-width: 700px;
     min-width: 300px;
     margin: 0 auto;
 }
@@ -108,7 +108,7 @@ body, h1, h2, h3, p, div {
 
 #footerframe {
     margin: 0 40px;
-    min-height: 100px
+    min-height: 50px
 }
 
 #footer ul {
@@ -124,9 +124,9 @@ body, h1, h2, h3, p, div {
 /* =---------------- Styles ----------*/
 
 table.main-content {
-    width: 70%;
+    width: 60%;
     border-collapse: collapse; /* Ensures no gaps between borders */
-    position: relative;
+    position: static;
     border-width: 5px;
     border-style: solid;
     border-color: black;
@@ -155,46 +155,14 @@ table.main-content {
 }
 
 .panel .content {
-    position: center;
-    border-width: 2px;
+    position: relative;
+    border-width: 3px;
     border-style: solid;
     border-color: #14447A;
     padding: 5px;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
-}
-
-.subscribe-form {
-    display: flex;                 /* Use flexbox for layout */
-    flex-direction: column;        /* Arrange children in a column */
-    align-items: center;           /* Center children horizontally */
-    justify-content: center;       /* Center children vertically */
-    width: 600px;                 /* Set a specific width for the form */
-    margin: 0 auto;               /* Center the form on the page */
-}
-
-.subscribe-form label {
-    margin-bottom: 5px;           /* Space between the label and input*/
-}
-
-.subscribe-form input {
-    margin-bottom: 15px;          /* Space between input and button */
-    padding: 8px;                 /* Inner padding for comfort */
-    width: 100%;                  /* Make the input full-width relative to the form */
-}
-
-.poweredby {
-    clear: both;
-    padding-top: 2px;
-}
-
-p.poweredby a {
-    background: none;
-}
-
-p.poweredby a:hover {
-    background: none;
 }
 
 p a {
@@ -234,10 +202,10 @@ input[type="password"] {
 }
 
 textarea {
-    padding: 0px;
+    padding: 3px;
     border-width: 1px;
     border-style: solid;
-    width: 70%;
+    width: 60%;
 }
 
 select {
@@ -250,8 +218,8 @@ select {
 
 input[type="submit"],
 p.button a, a.button {
-    background-color: #30BEEE;
-    width: 575px;                 /* Set a specific width for the form */
+    background-color: #ADD8E6;
+    width: 600px;                 /* Set a specific width for the form */
     margin: 0 auto;    
     border-style: solid;
     border-color: #14447A;
