@@ -90,7 +90,7 @@ body, h1, h2, h3, p, div {
 }
 
 #container {
-    max-width: 920px;
+    max-width: 900px;
     min-width: 300px;
     margin: 0 auto;
 }
