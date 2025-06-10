@@ -186,7 +186,7 @@ p a[href='./?p=unsubscribe'] {
 }
 
 #mainContent table td {
-    padding: 2px 2px;
+    padding: 5px 5px;
     margin: 1px;
 }
 
@@ -236,7 +236,7 @@ p.button a, a.button {
 input:hover[type="submit"],
 a:hover.button, p.button a:hover {
     cursor: pointer;
-    color: #14447A;
+    color: #30BEEE;
     text-decoration: underline;    /* Underline on hover */
     background-color: #30BEEE;
     font-weight: bold;            /* Make text bold on hover */
