@@ -107,8 +107,8 @@ body, h1, h2, h3, p, div {
 }
 
 #footerframe {
-    margin: 0 40px;
-    min-height: 100px
+    margin: 0 20px;
+    min-height: 20px
 }
 
 #footer ul {
