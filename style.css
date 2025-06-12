@@ -90,7 +90,7 @@ body, h1, h2, h3, p, div {
 }
 
 #container {
-    max-width: 700px;
+    max-width: 920px;
     min-width: 300px;
     margin: 0 auto;
 }
@@ -108,7 +108,7 @@ body, h1, h2, h3, p, div {
 
 #footerframe {
     margin: 0 40px;
-    min-height: 50px
+    min-height: 100px
 }
 
 #footer ul {
@@ -124,9 +124,9 @@ body, h1, h2, h3, p, div {
 /* =---------------- Styles ----------*/
 
 table.main-content {
-    width: 60%;
+    width: 70%;
     border-collapse: collapse; /* Ensures no gaps between borders */
-    position: static;
+    position: relative;
     border-width: 5px;
     border-style: solid;
     border-color: black;
@@ -152,11 +152,13 @@ table.main-content {
     -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    width: 65%;
+    margin: auto;
 }
 
 .panel .content {
-    position: relative;
-    border-width: 3px;
+    position: center;
+    border-width: 2px;
     border-style: solid;
     border-color: #14447A;
     padding: 5px;
@@ -165,12 +167,57 @@ table.main-content {
     border-radius: 0px;
 }
 
+.content form, .content > .error {
+    margin: auto;
+    width: 75%;
+}
+
+.content > h3 {
+    padding: 10px;
+}
+
+.content > p {
+    padding: 0 10px;
+}
+
+.subscribe-form {
+    display: flex;                 /* Use flexbox for layout */
+    flex-direction: column;        /* Arrange children in a column */
+    align-items: center;           /* Center children horizontally */
+    justify-content: center;       /* Center children vertically */
+    width: 600px;                 /* Set a specific width for the form */
+    margin: 0 auto;               /* Center the form on the page */
+}
+
+.subscribe-form label {
+    margin-bottom: 5px;           /* Space between the label and input*/
+}
+
+.subscribe-form input {
+    margin-bottom: 15px;          /* Space between input and button */
+    padding: 8px;                 /* Inner padding for comfort */
+    width: 100%;                  /* Make the input full-width relative to the form */
+}
+
+.poweredby {
+    clear: both;
+    padding-top: 2px;
+}
+
+p.poweredby a {
+    background: none;
+}
+
+p.poweredby a:hover {
+    background: none;
+}
+
 p a {
     font-size: 16px;
 }
 
 p a[href='./?p=unsubscribe'] {
-    float: right;
+    float: center;
     font-size: 12px;
     Margin: auto;
     margin-top: 50px
@@ -178,15 +225,19 @@ p a[href='./?p=unsubscribe'] {
 
 /* ---------------- Table Styles ---------------- */
 
+#mainContent {
+    padding: 0 10%;
+}
+
 #mainContent table {
-    width: 70%;
+    width: 100%;
     border-width: 2px;
     border-style: solid;
     border-color: #14447A;
 }
 
 #mainContent table td {
-    padding: 5px 5px;
+    padding: 2px 2px;
     margin: 1px;
 }
 
@@ -198,14 +249,15 @@ input[type="password"] {
     padding: 6px;
     border-width: 2px;
     border-style: solid;
-    width: 70%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 textarea {
-    padding: 3px;
+    padding: 0px;
     border-width: 1px;
     border-style: solid;
-    width: 60%;
+    width: 70%;
 }
 
 select {
@@ -219,8 +271,9 @@ select {
 input[type="submit"],
 p.button a, a.button {
     background-color: #ADD8E6;
-    width: 600px;                 /* Set a specific width for the form */
-    margin: 0 auto;    
+    width: 98%;                 /* Set a specific width for the form */
+    display: block;
+    margin: 2 auto;    
     border-style: solid;
     border-color: #14447A;
     border-width: 1px;
@@ -236,12 +289,13 @@ p.button a, a.button {
 input:hover[type="submit"],
 a:hover.button, p.button a:hover {
     cursor: pointer;
-    color: #30BEEE;
+    color: #14447A;
     text-decoration: underline;    /* Underline on hover */
     background-color: #30BEEE;
     font-weight: bold;            /* Make text bold on hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* X-offset, Y-offset, Blur, Color */
-    transform: scale(1)
+    transform: scale(1);
+    margin: 3px 3px;
 }
 
 span.required, div.required {
@@ -258,8 +312,9 @@ span.required, div.required {
 /* =---------------- small screens ----------*/
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    table.main-content {
+@media (max-width: 1008px) {
+    .panel {
+        width: 98%;
     }
-
+}
 /* end file:/lists/styles/style.css   */
