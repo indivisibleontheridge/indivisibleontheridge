@@ -217,7 +217,8 @@ p a {
 }
 
 p a[href='./?p=unsubscribe'] {
-    float: center;
+    float: right;
+    padding: 10px;
     font-size: 12px;
     Margin: auto;
     margin-top: 50px
@@ -231,7 +232,7 @@ p a[href='./?p=unsubscribe'] {
 
 #mainContent table {
     width: 100%;
-    border-width: 5px;
+    border-width: 3px;
     border-style: solid;
     border-color: #14447A;
 }
