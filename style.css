@@ -160,7 +160,7 @@ table.main-content {
     position: center;
     border-width: 2px;
     border-style: solid;
-    border-color: white;
+    border-color: #14447A;
     padding: 5px;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -234,7 +234,7 @@ p a[href='./?p=unsubscribe'] {
     width: 100%;
     border-width: 2px;
     border-style: solid;
-    border-color: white;
+    border-color: #FFFFFF;
 }
 
 #mainContent table td {
