@@ -232,7 +232,7 @@ p a[href='./?p=unsubscribe'] {
 
 #mainContent table {
     width: 100%;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     border-color: #14447A;
 }
@@ -274,13 +274,13 @@ p.button a, a.button {
     background-color: #ADD8E6;
     width: 98%;                 /* Set a specific width for the form */
     display: block;
-    margin: 5 auto;    
+    margin: 2 auto;    
     border-style: solid;
     border-color: #14447A;
     border-width: 1px;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: all 0.3s ease;
     padding: 6px 6px;
     font-size: 18px;
