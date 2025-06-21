@@ -21,7 +21,7 @@ caption, tbody, tfoot, thead, tr, th, td {
 
 ol, ul {
     list-style: none
-    margin: 0;
+    margin: 100;
     padding: 100;
 }
 
@@ -120,7 +120,7 @@ body, h1, h2, h3, p, div {
 
 #footer ul li {
     float: auto;
-    margin-right: 200px
+    margin-right: 200px;
 }
 
 /* =---------------- Styles ----------*/
