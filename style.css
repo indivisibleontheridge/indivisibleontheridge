@@ -21,6 +21,8 @@ caption, tbody, tfoot, thead, tr, th, td {
 
 ol, ul {
     list-style: none
+    margin: 0;
+    padding: 50;
 }
 
 blockquote, q {
@@ -113,12 +115,12 @@ body, h1, h2, h3, p, div {
 
 #footer ul {
     float: auto;
-    margin: 1.5em 0
+    margin: 1.5 em 0
 }
 
 #footer ul li {
     float: auto;
-    margin-right: 10px
+    margin-right: 50px
 }
 
 /* =---------------- Styles ----------*/
