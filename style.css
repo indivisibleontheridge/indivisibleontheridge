@@ -220,12 +220,20 @@ table.main-content {
 }
 
 p.poweredby a {
+    display: inline-block;         /* allow horizontal centering */
+    margin: 10px auto 0 auto;      /* top margin 20px, auto horizontal */
+    padding: 0;                   /* remove excessive padding */
+    font-size: 12px;
+    text-align: center;           /* center text inside link */
+    color: red;                   /* keep red color if desired */
+    font-weight: bold;
+    margin-bottom: 15px;          /* Space between input and button */
     background: none;
-    position: center;
 }
 
 p.poweredby a:hover {
     background: none;
+    text-decoration: underline;
     
 }
 
