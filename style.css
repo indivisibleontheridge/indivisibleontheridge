@@ -50,7 +50,7 @@ a {
   display: inline-block;     /* Makes the link behave like a block for centering */
   text-align: center;        /* Centers the text within the link box */
   font-weight: bold;         /* Makes the text bold */
-  text-decoration: none;/* Underlines the link */
+  text-decoration: none;    /* Underlines the link */
   color: red;                /* Sets the link color to red */
 }
 
@@ -127,7 +127,7 @@ body, h1, h2, h3, p, div {
     footer a:hover,
     footer a:focus {
       color: #ffa07a;            /* Lighter tomato on hover/focus */
-      text-decoration: underline;
+      text-decoration: none;
     }
 
 /* =---------------- Styles ----------*/
@@ -188,6 +188,11 @@ table.main-content {
     padding: 0 10px;
 }
 
+.content > a {
+    position: center;
+    padding: 0 10px;
+}
+
 .subscribe-form {
     display: flex;                 /* Use flexbox for layout */
     flex-direction: column;        /* Arrange children in a column */
@@ -214,10 +219,12 @@ table.main-content {
 
 p.poweredby a {
     background: none;
+    position: center;
 }
 
 p.poweredby a:hover {
     background: none;
+    
 }
 
 p a {
@@ -245,8 +252,9 @@ p a[href='./?p=unsubscribe'] {
 
     /* Example: style links inside footer */
     footer a {
+    display: inline-block;
     color: #ff6347;            /* Tomato red color for links */
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
     margin: 0 10px;            /* Spacing between links */
     transition: color 0.3s ease;
