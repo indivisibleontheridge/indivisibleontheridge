@@ -189,6 +189,14 @@ table.main-content {
 }
 
 .content > a {
+    display: inline-block;
+    color: #ff6347;            /* Tomato red color for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;            /* Spacing between links */
+    transition: color 0.3s ease;
+    }
+
     position: center;
     padding: 20 10px;
     align-items: center;           /* Center children horizontally */
@@ -233,6 +241,14 @@ p.poweredby a {
 
 p.poweredby a:hover {
     background: none;
+    display: inline-block;
+    color: #ff6347;            /* Tomato red color for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;            /* Spacing between links */
+    transition: color 0.3s ease;
+    }
+
     text-decoration: underline;
     
 }
