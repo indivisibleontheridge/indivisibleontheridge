@@ -190,7 +190,9 @@ table.main-content {
 
 .content > a {
     position: center;
-    padding: 0 10px;
+    padding: 20 10px;
+    align-items: center;           /* Center children horizontally */
+    justify-content: center;       /* Center children vertically */
 }
 
 .subscribe-form {
@@ -214,7 +216,7 @@ table.main-content {
 
 .poweredby {
     clear: both;
-    padding-top: 2px;
+    padding-top: 5px;
 }
 
 p.poweredby a {
