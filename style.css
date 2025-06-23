@@ -196,10 +196,10 @@ table.main-content {
 }
 
 .subscribe-form {
-    display: flex;                 /* Use flexbox for layout */
-    flex-direction: column;        /* Arrange children in a column */
-    align-items: center;           /* Center children horizontally */
-    justify-content: center;       /* Center children vertically */
+    display: flex;                 /* already using flexbox */
+    flex-direction: column;        /* stack fields vertically */
+    align-items: center;           /* center contents horizontally */
+    justify-content: center;       /* center vertically if needed */
     width: 600px;                 /* Set a specific width for the form */
     margin: 0 auto;               /* Center the form on the page */
 }
@@ -234,13 +234,16 @@ p a {
 }
 
 p a[href='./?p=unsubscribe'] {
-    display: inline-block;
-    text-align: center;
-    Margin: auto;
-    margin-top: 50px;
-    padding: 100px;
+    display: inline-block;         /* allow horizontal centering */
+    margin: 20px auto 0 auto;      /* top margin 20px, auto horizontal */
+    padding: 0;                   /* remove excessive padding */
     font-size: 12px;
-    
+    text-align: center;           /* center text inside link */
+    color: red;                   /* keep red color if desired */
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;              /* pointer cursor for usability */
+    width: fit-content;           /* shrink to content width */
 }
 
 .footer {
