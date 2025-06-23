@@ -19,12 +19,6 @@ caption, tbody, tfoot, thead, tr, th, td {
     background: transparent
 }
 
-ol, ul {
-    list-style: none
-    margin: 100;
-    padding: 100;
-}
-
 blockquote, q {
     quotes: none
 }
@@ -53,18 +47,23 @@ html * {
 }
 
 a {
-    text-decoration: none
+  display: inline-block;     /* Makes the link behave like a block for centering */
+  text-align: center;        /* Centers the text within the link box */
+  font-weight: bold;         /* Makes the text bold */
+  text-decoration: underline;/* Underlines the link */
+  color: red;                /* Sets the link color to red */
 }
 
 h3 {
     font-family: Georgia, serif;
     font-size: 24px;
-    font-weight: normal;
+    font-weight: bold;
     margin: 20px 0px;
     line-height: 30px
 }
 
 p {
+    font-family: Georgia, serif;
     font-size: 12px;
     margin: .75em 0
 }
@@ -103,25 +102,33 @@ body, h1, h2, h3, p, div {
 }
 
 #footer {
-    clear: both;
-    background-position: top left;
-    background-repeat: repeat-x
-}
+    width: 100%;               /* Full width of the page */
+    background-color: white;   
+    color: black;              /* White text for readability */
+    padding: 20px 0;           /* Vertical padding */
+      
+      /* Center all content horizontally */
+    text-align: center;
+      
+      /* Optional: set font and size */
+    font-family: Georgia, sans-serif;
+    font-size: 12px;
+    }
 
-#footerframe {
-    margin: 200 40px;
-    min-height: 100px
-}
+    /* Example: style links inside footer */
+    footer a {
+    color: #ff6347;            /* Tomato red color for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;            /* Spacing between links */
+    transition: color 0.3s ease;
+    }
 
-#footer ul {
-    float: auto;
-    margin: 1.5 em 0
-}
-
-#footer ul li {
-    float: auto;
-    margin-right: 200px;
-}
+    footer a:hover,
+    footer a:focus {
+      color: #ffa07a;            /* Lighter tomato on hover/focus */
+      text-decoration: underline;
+    }
 
 /* =---------------- Styles ----------*/
 
@@ -140,7 +147,6 @@ table.main-content {
     -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
-
 
 .panel {
     position: relative;
@@ -219,12 +225,36 @@ p a {
 }
 
 p a[href='./?p=unsubscribe'] {
-    float: right;
+    Margin: auto;
+    margin-top: 50px;
     padding: 100px;
     font-size: 12px;
-    Margin: auto;
-    margin-top: 50px
+    
 }
+
+.footer {
+    width: 100%;               /* Full width of the page */
+    color: black;              /* Black text for readability */
+    padding: 20px 0;           /* Vertical padding */
+      
+ /* Center all content horizontally */
+    text-align: center;
+    }
+
+    /* Example: style links inside footer */
+    footer a {
+    color: #ff6347;            /* Tomato red color for links */
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0 10px;            /* Spacing between links */
+    transition: color 0.3s ease;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      color: #ffa07a;            /* Lighter tomato on hover/focus */
+      text-decoration: underline;
+    }
 
 /* ---------------- Table Styles ---------------- */
 
